@@ -2,6 +2,7 @@
 from fastapi.testclient import TestClient # this client communicate with faastapi app without the need for uvicorn sever ruuning
 from app_fastapi import app
 
+
 client = TestClient(app) # instance of a client
 
 def test_root_get():
