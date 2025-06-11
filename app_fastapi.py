@@ -13,7 +13,9 @@ def generate_fibonacci(n: int):
         result.append(a)
         a, b = b, a + b
     return result
-
+@app.get("/")
+def title():
+    return {"message": "Febanacci Series App"}
 @app.post("/fibonacci")
 def get_fibonacci(data: FibonacciInput):
     count = data.count
