@@ -1,0 +1,1 @@
+## This project describes the automatic CICD pipeline for fastapi application and its deployment on dockershub
